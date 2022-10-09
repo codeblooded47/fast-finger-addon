@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "fast-finger-script",
+  "version": "1.0",
+
+  "description": "Adds a red border to all webpages matching mozilla.org.",
+
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+  "permissions": ["tabs"],
+  "content_scripts": [
+    {
+      "matches": ["https://10fastfingers.com/typing-test/english"],
+      "js": ["script.js"]
+    }
+  ]
+}
